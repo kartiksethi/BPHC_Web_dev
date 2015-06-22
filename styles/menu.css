@@ -1,0 +1,27 @@
+.image{
+	width:50%;
+	height: 50%;
+}
+
+.jumbotron{
+	background-image: url('../img/blue-texture.jpg');
+	background-attachment: fixed;
+}
+
+.contact{
+	background-color: #9797A3;
+	color: black;
+}
+
+.side{
+	background-color: #D4D4D8;
+	color: black;
+}
+
+h4,h6,h2,p,h3,li
+{
+	color: black;
+}
+.col-md-9{
+	background-color: white;
+}
