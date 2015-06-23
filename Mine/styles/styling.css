@@ -1,0 +1,8 @@
+.jumbotron{
+	background-image: url('../img/sci_fi.jpg');
+	color:white;
+	background-attachment: fixed;
+	min-height: 400px;
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
