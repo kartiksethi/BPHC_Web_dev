@@ -65,3 +65,38 @@ i.fb{
 	margin:2em 0 0 0;
 }
 
+.outer_th{
+	  text-align: center;
+  font-size: 16px;
+  color: #333d40;
+  height: 270px;
+  width: 270px;
+  border: 10px solid #03D3CC;
+  padding: 20px;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+}
+
+.inner_th{
+	  border: 2px solid #03D3CC;
+  height: 100%;
+  border-radius: 100%;
+  padding: 20px;
+
+}
+.inner_th:hover{
+	background-color: #03D3CC;
+	  border: 2px solid #03D3CC;
+  height: 100%;
+  border-radius: 10%;
+  padding: 20px;
+  transition: border-radius 0.2s;
+  transition: background-color 0.2s;
+
+
+}
+.subhead{
+	padding:5px;
+
+}
+
