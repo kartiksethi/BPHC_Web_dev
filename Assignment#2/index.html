@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html >
 <head>
+
      <title>Alien Abduction</title>
      <link href="./styles/bootstrap.min.css" rel="stylesheet" />
      <link rel="stylesheet" type="text/css" href="./styles/menu.css"/>
@@ -18,17 +19,18 @@
      <div class="text-center">
           <h2>ALIEN ABDUCTION</h2>
      <!--- FIll THIS OUT LAATER -->
-          <h5> Share your story of Abduction</h5>
      </div>
      
      
 
     <form role='form' class="form-horizontal">
+     <legend>Share your story of Abduction</legend>
          <div class="form-group">
               <label class="control-label col-md-3">First Name:</label>
               <div class="container col-md-9">
                     <input type="text" class='form-control' name='firstname' id ='first' placeholder='First Name'>
               </div>
+
               <label class="control-label col-md-3">Second Name:</label>
               <div class="container col-md-9">
                     <input type="text" class='form-control' name='secondname' id ='second' placeholder='Second Name'>
@@ -38,16 +40,16 @@
                     <input type="email" class='form-control' name='email' id ='email' placeholder='E-mail'>
               </div>
               <!--DAte FORMAT-->
-              <label class="control-label col-md-3">When did it happen?</label>
+              <label class="control-label col-md-3">When did it happen?:</label>
               <div class="container col-md-9">
-                    <input type="text" class='form-control' name='secondname' id ='second' placeholder='Second Name'>
+                    <input type="text" class='form-control' name='secondname' id ='second'>
               </div>
 
-              <label class="control-label col-md-3">How long were you gone?</label>
+              <label class="control-label col-md-3">How long were you gone?:</label>
               <div class="container col-md-9">
                     <input type="text" class='form-control' name='dur2' id ='dur2'>
               </div>
-              <label class="control-label col-md-3">How Many did you see?</label>
+              <label class="control-label col-md-3">How Many did you see?:</label>
               <div class="container col-md-9">
                     <input type="text" class='form-control' name='num' id ='num'>
               </div>
@@ -56,21 +58,49 @@
                     <input type="text" class='form-control' name='desc' id ='descr' placeholder='Carefully!'>
               </div>
               <!-- radio button thing comes here-->
+              <label class="control-label col-md-3">Have You seen my Dog?:</label>
+              <div class="col-md-9">
+
+              <input type="radio" name="choice" value="male" checked>
+              <label class="control-label">Yes</label>
+               <br>
+               <input type="radio" name="choice" value="female">
+               <label class="control-label">No</label>
+              </div>
+
               
               <label class="control-label col-md-3">Anything Else?</label>
               <div class="container col-md-9">
                     <input type="text" class='form-control' name='desc2' id ='desc2' placeholder="Don't hide anything please!">
               </div>
                <div class="col-md-6 col-xs-3 col-md-offset-3 col-xs-offset-4">
-                    <button type="button" class="btn btn-primary btn-block">Submit</button>
-              </div>
-
-              
+                    <a class="btn btn-primary btn-block " type="submit" data-toggle="modal" href='#modal-id'>Submit</a>
+              </div>    
          </div>
     </form>
 
+    
+    <div class="modal fade" id="modal-id">
+         <div class="modal-dialog">
+              <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Are your sure about the details?</h4>
+                   </div>
+                   <div class="modal-body message">
+                        We will be in touch with you via you E-mail ID !
+                   </div>
+                   <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Need to edit !</button>
+                        <button type="button" class="btn btn-primary">Send</button>
+                   </div>
+              </div>
+         </div>
+    </div>
+
 </div>
- <script src="./scripts/jquery-2.1.4.min.js"></script>
+
+     <script src="./scripts/jquery-2.1.4.min.js"></script>
      <script src="./scripts/bootstrap.min.js"></script>
      
 </body>
