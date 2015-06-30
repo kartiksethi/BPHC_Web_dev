@@ -5,9 +5,28 @@
      <title>Alien Abduction</title>
      <link href="./styles/bootstrap.min.css" rel="stylesheet" />
      <link rel="stylesheet" type="text/css" href="./styles/menu.css"/>
+     <script>
+          var date1 = {
+               hours:14,
+               day:24
+          }
+          fucntion setTime(){
+               var today = new Date();
+               var date2={
+                    hours : today.getHours();
+                    day : today.getDay();
 
+               }
+          }
+          function timer(date1,date2)
+          {
+               var diff_h  = date2.hours-date1.hours;
+               var diff_d  = date2.day-date2.hours;
+               document.getElementById('txt').innerHTML = diff_d+"days"+diff_h+"hours";
+          };
+     </script>
 </head>
-<body>
+<body onload="setTime()">
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -18,7 +37,8 @@
 	</div>
      <div class="text-center">
           <h2>ALIEN ABDUCTION</h2>
-     <!--- FIll THIS OUT LAATER -->
+     <h4>My Dog was abducted <div class="txt"></div> ago</h4>
+
      </div>
      
      
